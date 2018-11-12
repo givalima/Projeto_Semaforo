@@ -1,0 +1,11 @@
+library IEEE;
+use IEEE.std_logic_1164.all; -- Biblioteca Padrão
+
+entity ProjetoSemaforoGiva is port -- Entidade tem que ter o mesmo nome do Projeto
+(
+	clk, rst : IN std_logic; -- As entradas são o clock e o reset
+	s1, s2 : OUT std_logic_vector (2 downto 0) -- As saídas são os semáforos que são vetores lógicos de 3 posições (Vermelho, Amarelo e Verde)
+);
+
+end ProjetoSemaforoGiva;
+
